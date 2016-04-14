@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>HotelReview</display-name>
+  <servlet>
+  <servlet-name>login</servlet-name>
+  <servlet-class>com.java.login.login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>login</servlet-name>
+  <url-pattern>/logincheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>Register</servlet-name>
+  <servlet-class>com.java.login.Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Register</servlet-name>
+  <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ProductDescription</servlet-name>
+  <servlet-class>com.java.login.AddProductDescription</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ProductDescription</servlet-name>
+  <url-pattern>/AddProductDescription</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>ProcessServlet</servlet-name>
+  <servlet-class>com.java.login.ProcessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ProcessServlet</servlet-name>
+  <url-pattern>/ProcessServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>AddDbServlet</servlet-name>
+  <servlet-class>com.java.login.AddDbServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddDbServlet</servlet-name>
+  <url-pattern>/AddDbServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
